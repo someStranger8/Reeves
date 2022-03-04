@@ -261,7 +261,7 @@ In reeves you can use classes for OOP
 ```python
 # initalize the dog class
 class Dog():
-  func init(self, name):
+  func __init__(self, name):
     self.name = name
 
   func bark(self):
