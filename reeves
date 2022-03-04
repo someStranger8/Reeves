@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+# imports
+import os, sys
+
+# run file
+def runFile(f, w):
+  # compile
+  output = f.read().replace("func","def")
+  output = output.replace("var ","")
+  output = output.replace(" then",":")
+  output = output.replace("end","")
+  output = output.replace("true","True")
+  output = output.replace("false","False")
+
+  # create output file
+  y = open(w, "x")
+  y.write(output)
+  y.close()
+
+if __name__ == "__main__":
+  with open(sys.argv[1], "rt") as f:
+    file = sys.argv[1]
+    file = file.split(".")
+    runFile(f, file[0] + ".py")
