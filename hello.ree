@@ -1,0 +1,6 @@
+# print out hello then name
+func hello(name) then
+  print("Hello, " + name)
+end
+
+hello(name)
