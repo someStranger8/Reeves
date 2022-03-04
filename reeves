@@ -22,11 +22,7 @@ def runFile(f, w):
   y.close()
 
 if __name__ == "__main__":
-  if "-v" or "--version" in sys.argv:
-    print(VERSION)
-  
-  else:
-    with open(sys.argv[1], "rt") as f:
-      file = sys.argv[1]
-      file = file.split(".")
-      runFile(f, file[0] + ".py")
+  with open(sys.argv[1], "rt") as f:
+    file = sys.argv[1]
+    file = file.split(".")
+    runFile(f, file[0] + ".py")
