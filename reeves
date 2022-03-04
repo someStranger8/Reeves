@@ -22,7 +22,11 @@ def runFile(f, w):
   y.close()
 
 if __name__ == "__main__":
-  with open(sys.argv[1], "rt") as f:
-    file = sys.argv[1]
-    file = file.split(".")
-    runFile(f, file[0] + ".py")
+  if len(sys.argv) == 1:
+    print(VERSION)
+  
+  else:
+    with open(sys.argv[1], "rt") as f:
+      file = sys.argv[1]
+      file = file.split(".")
+      runFile(f, file[0] + ".py")
