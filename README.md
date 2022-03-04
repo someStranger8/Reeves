@@ -271,7 +271,7 @@ class Dog():
 to call a class you can use
 
 ```python
-var myDog = new Dog("henry")
+var myDog = Dog("henry")
 myDog.bark()
 ```
 
@@ -312,7 +312,7 @@ classes work too
 
 ```python
 from myFile import *
-var dog = new Dog("henry")
+var dog = Dog("henry")
 dog.bark()
 ```
 
