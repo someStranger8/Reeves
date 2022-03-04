@@ -22,7 +22,7 @@ def runFile(f, w):
   y.close()
 
 if __name__ == "__main__":
-  if sys.argv[1] == "-v" or "--version":
+  if "-v" or "--version" in sys.argv:
     print(VERSION)
   
   else:
