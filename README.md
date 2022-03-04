@@ -7,8 +7,6 @@ language that can be compiled to python code
 
 ## Getting started
 
-### Unix
-
 First things first, you need to install the reeves
 compiler. You can do a git clone to copy the repo
 
@@ -25,16 +23,6 @@ ls /bin | grep reeves
 
 # add it to your binarys folder
 sudo cp reeves /bin
-```
-
-### Windows
-
-To download the reeves compiler from
-the github page. Next navigate to the file
-and add it to your system32
-
-```
-copy C:\PATH\TO\FILE\reeves D:\Windows\System32
 ```
 
 ## Syntax
