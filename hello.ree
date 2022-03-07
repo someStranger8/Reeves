@@ -3,4 +3,4 @@ func hello(name) then
   print("Hello, " + name)
 end
 
-hello(name)
+hello("name")
