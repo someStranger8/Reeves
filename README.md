@@ -47,6 +47,10 @@ you can use indentation of 2 or 4 spaces
 ```python
 if x < 5:
   print("x is less than five")
+
+# this will result in an error
+if y < 5:
+print("y is less than 5")
 ```
 
 or you can also use the `end` key word
@@ -65,13 +69,15 @@ if x < 5 then print("x is less than 5") end
 
 ***
 
-Comments are very simple you can use a `#`,
+Comments are very simple you can use a `#` or `//`,
 example:
 
 ```python
 # this is a comment
+// and this
 
 print("hi") # this works
+print("hi") // this too
 ```
 
 you can also use multi line comments:
@@ -81,6 +87,10 @@ you can also use multi line comments:
 this is a multi line
 comment
 """
+
+/*
+and this
+*/
 ```
 
 ## Varibles
@@ -141,11 +151,8 @@ you can call functions like this:
 
 ```python
 func add(a, b):
-  return a + b
+  print(a + b)
 
-print(add(1, 1))
-
-# or just normaly like this:
 add(1, 1)
 ```
 
