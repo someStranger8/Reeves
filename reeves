@@ -11,7 +11,8 @@ def runFile(f, w):
   # compile
   output = f.read().replace("func","def")
   output = output.replace("var ","")
-  output = output.replace(" then",":")
+  output = output.replace(" then",":\n")
+  output = output.replace(";","\n")
   output = output.replace("end","")
   output = output.replace("true","True")
   output = output.replace("false","False")
