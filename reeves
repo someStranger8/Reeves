@@ -13,6 +13,8 @@ def runFile(f, w):
   output = output.replace("var ","")
   output = output.replace(" then",":\n")
   output = output.replace(";","\n")
+  output = output.replace("/*", '"""')
+  output = output.replace("*/", '"""')
   output = output.replace("end","")
   output = output.replace("true","True")
   output = output.replace("false","False")
