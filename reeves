@@ -12,7 +12,6 @@ def runFile(f, w, c):
   output = f.read().replace("func","def")
   output = output.replace("var ","")
   output = output.replace(" then",":")
-  output = output.replace(";","\n")
   output = output.replace("/*", '"""')
   output = output.replace("*/", '"""')
   output = output.replace("end","")
