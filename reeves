@@ -28,7 +28,7 @@ def runFile(f, w, c):
   
   if c == "-i":
     os.system(f"python3 {w}")
-    os.system("")
+    os.system(f"rm {w}")
   
   elif c == "-c":
     pass
