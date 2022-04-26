@@ -32,7 +32,13 @@ sudo cp reeves /bin
 you can compile a file to python
 
 ```bash
-$ reeves MyFile.ree
+$ reeves -c MyFile.ree
+```
+
+or interpret
+
+```bash
+$ reeves -i MyFile.ree
 ```
 
 you can join strings together
