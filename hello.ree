@@ -1,6 +1,23 @@
-# print out hello then name
-func hello(name) then
-  print("Hello, " + name)
+"""
+  A simple fibbinotchi program
+"""
+
+func fib(n) then
+  if n < 0 then
+        print("Incorrect input")
+  end
+  
+  elif n == 0 then
+    return 0
+  end
+ 
+  elif n == 1 or n == 2 then
+    return 1
+  end
+ 
+  else then
+    return Fibonacci(n-1) + Fibonacci(n-2)
+  end
 end
 
-hello("name")
+print(fib(9))
