@@ -4,14 +4,14 @@
 import os, sys
 
 # version
-VERSION = "v1.3.2"
+VERSION = "v1.4.1"
 
 # run file
-def runFile(f, w):
+def runFile(f, w, c):
   # compile
   output = f.read().replace("func","def")
   output = output.replace("var ","")
-  output = output.replace(" then",":\n")
+  output = output.replace(" then",":")
   output = output.replace(";","\n")
   output = output.replace("/*", '"""')
   output = output.replace("*/", '"""')
@@ -25,6 +25,13 @@ def runFile(f, w):
   y = open(w, "x")
   y.write(output)
   y.close()
+  
+  if c == "-i":
+    os.system(f"python3 {w}")
+    os.system("")
+  
+  elif c == "-c":
+    pass
 
 if __name__ == "__main__":
   if len(sys.argv) == 1:
