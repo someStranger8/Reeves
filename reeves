@@ -4,7 +4,7 @@
 import os, sys
 
 # version
-VERSION = "v1.4.1"
+VERSION = "v1.2.2"
 
 # run file
 def runFile(f, w, c):
@@ -26,8 +26,13 @@ def runFile(f, w, c):
   y.close()
   
   if c == "-i":
-    os.system(f"python3 {w}")
-    os.system(f"rm {w}")
+    if os.name == 'nt':
+      os.system(f"python3 {w}")
+      os.system(f"del {w}")
+    
+    else:
+      os.system(f"python3 {w}")
+      os.system(f"rm {w}")
   
   elif c == "-c":
     pass
