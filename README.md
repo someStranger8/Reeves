@@ -453,15 +453,15 @@ end
 
 > Equals: `a == b`<br>
 
-Not Equals: `a != b`<br>
+> Not Equals: `a != b`<br>
 
-Less than: `a < b`<br>
+> Less than: `a < b`<br>
 
-Less than or equal to: `a =< b`<br>
+> Less than or equal to: `a =< b`<br>
 
-Greater than: `a > b`<br>
+> Greater than: `a > b`<br>
 
-Greater than or equal to: `a >= b`<br>
+>  Greater than or equal to: `a >= b`<br>
 
 `and`<br>
 
@@ -479,14 +479,14 @@ varibles have different data types:
 
 > Text types: `str`<br>
 
-Numeric types: `int`, `float`, `complex`<br>
+> Numeric types: `int`, `float`, `complex`<br>
 
-Sequence types: `list`, `range`<br>
+> Sequence types: `list`, `range`<br>
 
-Mapping types: `dict`<br>
+> Mapping types: `dict`<br>
 
-Set types: `set`, `frozenset`<br>
+> Set types: `set`, `frozenset`<br>
 
-Boolean type: `bool`<br>
+> Boolean type: `bool`<br>
 
-Binary types: `byte`, `bytearray`, `memoryview`
+> Binary types: `byte`, `bytearray`, `memoryview`
